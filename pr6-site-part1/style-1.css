@@ -1,0 +1,35 @@
+*{
+  box-sizing:content-box;
+}
+
+.grid_container {
+  width: 100%;/*ширина блока на весь экран*/
+  height: 570px;
+  max-width: 1000px;
+  margin: auto; /*выравнивание по центру*/
+  display: grid; /*grid сетка*/
+  grid-column-gap: 10px ; /*отступы между столбцами*/
+  grid-row-gap: 10px;  /*отступы между строками*/
+  grid-template-columns: 30% 1fr; /*размеры,чтобы колонка left занимала 1/3 а right 2/3*/
+  word-break: break-all; /*чтобы при большом наборе слов они не вылазили за границы блока, а переносились на следующую строку*/
+}
+
+
+
+.left,.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 25px;
+  background-color: #e28743;
+}
+
+@media (max-width: 450px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  
+}

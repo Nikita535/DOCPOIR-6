@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: auto;
+  padding:10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;/*перенос блоков на новый ряд*/
+}
+
+/* .container div{
+  margin:5px;
+} */
+
+.A,.B,.C,.D,.E {
+  border: 2px solid #1e81b0;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.A {
+  flex-basis: 100%;
+}
+
+.B,
+.D {
+  flex-basis: 65%;
+}
+
+.E,
+.C {
+  flex-basis: 35%;
+}
+
+@media (max-width: 450px) {
+  .B,
+  .E {
+    flex-basis: 100%;
+  }
+
+  .C,
+  .D {
+    flex-basis: 50%;
+  }
+}

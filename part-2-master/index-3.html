@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Document</title>
+  <link rel="stylesheet" href="style-3.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header_">
+    <div class="header_logo">
+      <span class="logo">Logo</span>
+    </div>
+
+    <nav class="nav" id="nav">
+      <a class="link" href="#">Home</a>
+      <a class="link" href="#">About</a>
+      <a class="link" href="#">Services</a>
+      <a class="link" href="#">Contacts</a>
+    </nav>
+
+    <button class="menu_" id="menu_"></button>
+  </div>
+</header>
+
+<script>
+
+/* Код для выпадающего меню на мобильных устройствах */
+ nav = document.querySelector("#nav");
+
+menu_.addEventListener("click", event => {
+  nav.classList.toggle("active");
+ 
+});
+
+</script>
+
+</body>
+
+</html>
